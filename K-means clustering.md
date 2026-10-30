@@ -49,3 +49,22 @@ plt.title('Elbow Method')
 plt.show()
 ```
 ## Using Gridsearch method
+```python
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {'n_clusters': [2, 3, 4, 5, 6]}
+
+# Create a KMeans object
+kmeans = KMeans(n_init='auto',random_state=42)
+
+# Create a GridSearchCV object
+grid_search = GridSearchCV(kmeans, param_grid, cv=5)
+
+# Perform grid search
+grid_search.fit(X)
+
+# Get the best parameters and the best score
+best_params = grid_search.best_params_
+best_score = grid_search.best_score_
+```
+
