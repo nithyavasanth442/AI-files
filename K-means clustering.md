@@ -40,3 +40,12 @@ for k in range(1, 11):
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)# here inertia calculate sum of square distance in each cluster
 ```
+```python
+plt.plot(range(1, 11), wcss, marker='o')
+plt.xlabel('Number of Clusters (k)')
+plt.ylabel('Within-Cluster Sum of Squares (WCSS)')
+
+plt.title('Elbow Method')
+plt.show()
+```
+## Using Gridsearch method
