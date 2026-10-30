@@ -71,4 +71,7 @@ best_score = grid_search.best_score_
 print("Best Parameters:", best_params)
 print("Best Score:", best_score)
 ```
-
+# Perform k-means clustering
+k = 3 # Number of clusters
+kmeans = KMeans(n_clusters=k,n_init='auto', random_state=42)
+kmeans.fit(X)
