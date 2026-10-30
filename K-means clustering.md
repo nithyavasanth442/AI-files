@@ -6,3 +6,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
+## Loading the dataset
+# Load the Iris dataset
+iris = load_iris()
+X = iris.data # create only input data not target
