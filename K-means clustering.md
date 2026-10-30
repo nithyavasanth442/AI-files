@@ -16,3 +16,10 @@ sepal length (cm)	sepal width (cm)	petal length (cm)	petal width (cm)
 2	4.7	3.2	1.3	0.2
 3	4.6	3.1	1.5	0.2
 4	5.0	3.6	1.4	0.2
+Visualize the clusters
+plt.s# catter(X[:, 0], X[:, 1])
+#plt.scatter(centroids[:, 0], centroids[:, 1], marker='X', s=200, c='red')
+plt.xlabel(iris.feature_names[0])
+plt.ylabel(iris.feature_names[1])
+plt.title('Distribution of Iris data')
+plt.show()
