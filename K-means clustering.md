@@ -67,4 +67,8 @@ grid_search.fit(X)
 best_params = grid_search.best_params_
 best_score = grid_search.best_score_
 ```
+```python
+print("Best Parameters:", best_params)
+print("Best Score:", best_score)
+```
 
